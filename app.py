@@ -250,8 +250,8 @@ def afficher_resultat():
             champs_texte = ", ".join(champs_manquants)
             st.markdown(f"""
             <div class="custom-alert">
-                <strong>⚠️ Veuillez remplir tous les champs obligatoires avant de générer le lien :</strong><br/>
-                {champs_texte}
+                    <strong>⚠️ Veuillez renseigner votre email de connexion à Démarches Simplifiées. </strong><br/>
+                
             </div>
             """, unsafe_allow_html=True)
         
