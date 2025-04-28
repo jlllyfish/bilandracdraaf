@@ -114,7 +114,7 @@ def main():
     # Configuration de la page
     st.set_page_config(
         page_title="Création dossier bilan Drac Draaf",
-        page_icon="🐣",  # Icône de la page 
+        page_icon="🦥",  # Icône de la page 
         layout="wide",
         initial_sidebar_state="expanded"
     )
@@ -136,7 +136,7 @@ def main():
     st.sidebar.title("Statut du dossier")
     
     # Section principale
-    st.title("🐣 Création dossier bilan Drac Draaf")
+    st.title("🦥 Création dossier bilan Drac Draaf")
     st.subheader("Recherche par email")
     
 
