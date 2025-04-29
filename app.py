@@ -144,7 +144,7 @@ def main():
     email_recherche = st.text_input("Email", help="Adresse email associée au dossier", key="email_recherche")
     
     # Bouton de recherche
-    if st.button("Rechercher dans Grist", key="btn_recherche"):
+    if st.button("Récupérer les données vous concernant", key="btn_recherche"):
         if not email_recherche:
             st.markdown("""
             <div class="custom-alert">
@@ -177,7 +177,7 @@ def main():
                 # Afficher les données trouvées
                 st.markdown("""
                 <div class="info-box">
-                    <strong>Données trouvées dans Grist</strong><br/>
+                    <strong>Données récupérées</strong><br/>
                     Les champs du formulaire ont été remplis automatiquement.
                 </div>
                 """, unsafe_allow_html=True)
@@ -447,7 +447,7 @@ def update_sidebar():
     if st.session_state.grist_data_loaded:
         st.sidebar.markdown("""
         <div style="margin-top:30px; background-color:#e3f2fd; padding:10px; border-radius:4px;">
-            <strong>🔄 Données chargées depuis Grist</strong>
+            <strong>🔄 Données chargées</strong>
         </div>
         """, unsafe_allow_html=True)
 
